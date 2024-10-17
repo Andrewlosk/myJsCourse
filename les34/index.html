@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 2000px;
+        }
+        .target {
+            margin: 1000px auto;
+            height: 100px;
+            background-color: lightblue;
+            width: 100px;
+        }
+
+        img{
+            margin: 20px 0 ;
+        }
+
+
+        .menu{
+            position: fixed;
+
+            top: 0;
+        }
+        .menu ul {
+            display: flex;
+            gap: 10px;
+            
+            list-style: none;
+
+        }
+        .menu a{
+            color: black;
+            text-decoration: none;
+            border-bottom: 1px solid black;
+        }
+        .active{
+            color: aliceblue;
+            background-color:blueviolet;
+        }
+
+        section{
+            height: 100vh;
+        }
+
+        section:nth-child(1) {
+            background-color:hotpink;
+
+        }
+        section:nth-child(2) {
+            background-color:aqua;
+
+        }
+        section:nth-child(3) {
+            background-color:yellow;
+
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <div class="target"></div>
+    </div>
+
+
+    <h2 style="margin-top: 2000px;">lazy-loading</h2>
+    <img data-src="https://cs13.pikabu.ru/post_img/big/2023/09/11/5/1694416670162565263.jpg" loading="lazy" width="300" height="450" alt="cat">
+    <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Patron_in_Ohmatdyt%2C_28_April_2022_%2804%29.jpg/800px-Patron_in_Ohmatdyt%2C_28_April_2022_%2804%29.jpg" loading="lazy" width="500" height="300" alt="patron">
+    <img data-src="https://www.rbc.ua/static/img/_/i/_instagram_com_patron_dsns_1_1300x820.jpg" loading="lazy" width="500" height="300" alt="dog">
+    <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Patron_with_Golden_Paw_award.jpg/280px-Patron_with_Golden_Paw_award.jpg" loading="lazy" width="400" height="300" alt="dog">
+
+
+
+    <section>
+        <video src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" width="100%" height="300px"
+          controls></video>
+    </section>
+
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#top">top</a></li>
+            <li><a href="#middle">middle</a></li>
+            <li><a href="#bottom">bottom</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section id="top"></section>
+        <section id="middle"></section>
+        <section id="bottom"></section>
+    </main>
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/practice.js"></script>
+    
+</body>
+</html>

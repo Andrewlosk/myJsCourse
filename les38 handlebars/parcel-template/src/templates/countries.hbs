@@ -1,0 +1,42 @@
+{{!-- <div>
+    <h1>Name: {{name}}</h1>
+    <p>{{capital}}</p>
+    <p>{{currency}}</p>
+    <p>{{language}}</p>
+    <p>{{population}}</p>
+    <img src="{{flag}}" alt="{{name}}"></img>
+    <p>{{infected}}</p>
+    
+</div> --}}
+
+
+
+
+{{!-- <ul class="people_list"></ul> --}}
+  {{!-- {{#each countries}} --}}
+    {{!-- <li>    <h1>Name: {{name}}</h1>
+    <p>{{capital}}</p>
+    <p>{{currency}}</p>
+    <p>{{language}}</p>
+    <p>{{population}}</p>
+    <img src="{{flag}}" alt="{{name}}"></img>
+    <p>{{infected}}</p>     </li> --}}
+  {{!-- {{/each}} --}}
+{{!-- </ul> --}}
+
+
+
+
+<ul class="people_list"></ul>
+  {{#each countries}}
+    <li>
+    <h1>Name: {{name}}</h1>
+    <p>{{capital}}</p>
+    <p>{{currency}}</p>
+    <p>{{language}}</p>
+    <p>{{population}}</p>
+    <img src="{{flag}}" alt="{{name}}"></img>
+    <p>{{infected}}</p>
+    </li>
+  {{/each}}
+</ul>

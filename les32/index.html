@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <p>поширення події</p>
+    <div id="grandparent">
+      дід
+      <div id="parent">
+        батько
+        <div id="child">дитина</div>
+      </div>
+    </div>
+
+    <p>спливання</p>
+
+    <div id="outher">
+      зовнішній
+      <div id="middle">
+        середній
+        <div id="inner">внутрішній</div>
+      </div>
+    </div>
+
+    <p class="output">Selected color: -</p>
+    <div class="color-palette"></div>
+
+    <!-- делегування подій -->
+    <div id="buttonContainer"></div>
+
+    <!-- practice -->
+
+    <ul id="userList">
+      <li data-id="1">
+        John Doe
+        <button class="deleteButton">Delete</button>
+      </li>
+      <li data-id="2">
+        Jane Smith
+        <button class="deleteButton">Delete</button>
+      </li>
+      <li data-id="3">
+        Bob Johnson
+        <button class="deleteButton">Delete</button>
+      </li>
+    </ul>
+    ;
+
+    <!-- task2 -->
+    <h1>Task List</h1>
+    <form>
+      <label for="newTask">New task:</label>
+      <input type="text" id="newTask" />
+      <button type="submit" id="addTask">Add</button>
+    </form>
+    <ul id="taskList"></ul>
+    
+
+
+
+    
+
+    <script src="./js/script.js"></script>
+    <script src="./js/practice.js"></script>
+  </body>
+</html>

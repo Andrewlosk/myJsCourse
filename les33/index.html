@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="event-counter">
+        <div class="box">
+            <p>nothing</p>
+            <span class="output vannila">0</span>
+        </div>
+        <div class="box">
+            <p>throttled</p>
+            <span class="output throttled">0</span>
+        </div>
+        <div class="box">
+            <p>Debounced</p>
+            <span class="output debounced">0</span>
+        </div>
+    </div>
+
+
+    <p>приклади з інпутами</p>
+
+    <input type="text" class="input" style="margin-top: 100px;">
+
+    <div class="wrapper">
+        <span>default:</span>
+        <span id="default"></span>
+    </div>
+    <div class="wrapper">
+        <span>Debounced:</span>
+        <span id="debounce"></span>
+    </div>
+    <div class="wrapper">
+        <span>throttled:</span>
+        <span id="throttle"></span>
+    </div>
+
+
+
+    <!-- practice -->
+     <input type="text" class="inputPractice">
+
+
+
+
+
+     <div id="graph" style="background-color: aliceblue;">
+        <svg width="500" height="300">
+          <circle id="point" cx="50" cy="50" r="5" fill="blue" />
+        </svg>
+    </div>
+    <span id="coord"></span> 
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/pactice.js"></script>
+</body>
+</html>

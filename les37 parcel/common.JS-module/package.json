@@ -1,0 +1,12 @@
+{
+  "name": "common.js-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./js/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

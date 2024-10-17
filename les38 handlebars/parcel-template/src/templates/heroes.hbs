@@ -1,0 +1,17 @@
+<ul class="people_list"></ul>
+  {{#each heroes}}
+    <li>
+        <h2>{{hero}}</h2>  
+        <p>{{weapon}}</p> 
+        <p>
+            {{#each skills}}
+                {{this}}
+            {{/each}}
+        </p>
+        <img src="{{img}}" alt="{{hero}}">
+
+    </li>
+
+
+  {{/each}}
+</ul>

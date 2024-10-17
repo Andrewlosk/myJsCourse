@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1 -->
+    <template id="person" type="text/x-handlebars-template">
+      <!-- <p>{{firstname}} {{lastname}}</p> -->
+      <p>{{person.firstname}} {{person.lastname}}</p>
+    </template>
+
+    <div id="person-template"></div>
+
+    <!-- 2 -->
+
+    <template id="person-with" type="text/x-handlebars-template">
+      {{#with person}} {{firstname}} {{lastname}} {{/with}}
+    </template>
+
+    <div id="person-with-template"></div>
+
+    <!-- 3 -->
+    <template id="people-list" type="text/x-handlebars-template">
+      <ul class="people_list">
+        {{#each list}}
+        <li>{{this.name}} {{this.age}} <br> <img src="{{this.img}}" alt="img" width="450px"></li>
+        {{/each}}
+      </ul>
+    </template>
+
+
+    <div id="people-list-template"></div>
+
+
+
+
+    <!-- 4 -->
+
+<!-- 
+    <template id="person-loud" type="text/x-handlebars-template">
+        <p>{{firstname}} {{loud lastname}}</p>
+    </template> -->
+
+
+
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script>
+      // compile the template
+      var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+      // execute the compiled template and print the output to the console
+      console.log(template({ doesWhat: "rocks!" }));
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

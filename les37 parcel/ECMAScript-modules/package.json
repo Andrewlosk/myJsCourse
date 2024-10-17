@@ -1,0 +1,13 @@
+{
+  "name": "ecmascript-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./js/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
